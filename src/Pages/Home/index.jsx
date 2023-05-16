@@ -9,10 +9,9 @@ function Home() {
     fetch('https://api.escuelajs.co/api/v1/products')
       .then((res) => res.json())
       .then((data) => {
-        console.log(data)
         setItems(data)})
   }, [])
-
+  console.log("Home component")
   return (
     <>
       <Layout>
